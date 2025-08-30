@@ -1,0 +1,667 @@
+html {
+    scroll-behavior:smooth;
+}
+
+body {
+    width: 100%;
+    height:100%;
+}
+
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    text-decoration-line: none;
+}
+
+header {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    margin:0;
+    height: 60px;
+    width: 100%;
+    padding: 16px;
+    border: solid black 2px;
+    background-color: #02024b;
+    border-radius:5px;
+    font-size:18px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.logo-container {
+    border: none;
+}
+.logoDS {
+    height: 40px;
+    width: 40px;
+    border: none;
+}
+
+.navBox {
+    display:flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.elementsGroup {  
+    display:flex;
+    gap: 25px;
+    justify-content: space-between;
+    list-style: none; 
+} 
+
+.elementsNavegation {
+    color:white;
+}
+
+.elementsNavegation:hover {
+    border-bottom: 2px solid white;
+}
+
+.inputBox {
+    width: 380px;
+    height: 30px;
+    border-radius: 5px;
+}
+
+#form_header_search {
+    display:flex;
+    align-items:center;
+}
+
+.headerInput {
+    width: 380px;
+    height: 30px;
+    border-radius: 15px;
+    border:none;
+    background-color:#fff;
+}
+
+.loupeBox {
+    height: 30px;
+    width: 30px;
+    background-color: transparent;
+    color:#fff;
+    border:none;
+    font-size: 20px;
+}
+
+.loginContainer {
+    padding: 5px;
+}
+
+.loginSvg {
+    height: 30px;
+    width: 30px;
+}
+
+.btn-menu {
+    display: none;
+    border: none;
+    border-radius: 10px;
+}
+.btn-menu .menuIcon {
+    width: 35px;
+    height: 35px;
+    background-color:  rgb(7, 6, 6);
+    color: white;
+    font-size: 40px;
+    display: block;
+    cursor: pointer;
+}
+
+.menu-mobile {
+    height: 50vh;
+    width: 12em;
+    border-radius: 8px;
+    background-color: rgb(7, 6, 6);
+    position: fixed;
+    top: 0px;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    transition: 0.5s;
+    display:none;
+}
+
+.menu-mobile.clickClose {
+    display:flex; 
+}
+
+.btn-fechar .iconFechar {
+   font-size: 25px;
+   color: white;
+   background-color: black;
+   width: 15px;
+   height: 15px;
+   cursor: pointer;
+
+}
+
+.boxElementsMobile {
+    width: 100%;
+    height: 100%;
+}
+
+ .elementsGroupMobile {
+   display: flex;
+   flex-direction: column;
+   text-align:right;
+   background-color: rgb(7, 6, 6);
+   height: 100%;
+   width: 100%;
+   list-style: none;
+}
+
+.list-mobile {
+   height: 35px;
+   width: 100%;
+   margin-bottom: 3px;
+   padding: 5px;
+  
+}
+
+.list-mobile a {
+    color: white;
+    font-size: 18px;
+    font-weight:500;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.list-mobile a i {
+    margin: 5px;
+}
+
+.list-mobile:hover {
+    background-color: rgb(188, 188, 188);
+    transition: 0.8s;
+}
+
+h1 {
+    margin: 0 auto;
+    width:200px;
+    color:black;
+    font-size:4em;
+    letter-spacing: 3px;
+   
+}
+.firstBox { 
+  width: 100%;
+  padding: 5px;
+}
+
+.iphone-box {
+   margin: 0 auto;
+   width: 100%;
+   height:600px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   background-color: black;
+   border-radius: 10px;
+   gap: 50px;
+   background-image:url('/images/iphone15-principal.jpg');
+   background-origin: border-box ;
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: cover;
+   object-fit: cover;
+}
+
+.iphone-title-section {
+    margin: 0 auto;
+    height: 300px;
+    width: 780px;
+}
+
+.iphone15-title {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 6em;
+    color:white;
+    letter-spacing: 4px;
+    word-spacing: 3px;
+    margin-left:80px;
+  }
+  
+
+.button-confira {
+    width: 250px;
+    height: 70px;
+    font-size: 26px;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 3px;
+    word-spacing: 3px;
+    border-radius:15px;
+    margin: 0 0 3em 230px;
+    border:solid white 2px;
+    color:black;
+    background-color: white;
+    cursor: pointer;
+}
+
+.button-confira:hover {
+    border:solid white 2px;
+    color:blue;
+    font-size:28px;
+    height: 75px;
+}
+
+.my-products {
+    width: 100vw;
+    padding: 10px;
+}
+
+.h3Products {
+    text-align: center;
+    font-size:45px;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    color: rgb(30,144,255);
+    font-style: normal;
+    border-bottom: solid rgb(30,144,255) 2px;
+    margin-top:20px;
+    padding: 10px;
+}
+
+.div-section-group {
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    height: 400px;
+    width: 100%;
+}
+
+.product {
+    display: flex;
+    height: 350px;
+    width: 350px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.ps5-image-product { 
+    height: 250px;
+    width: 250px; /*ao clicar na imagem, direcionar para a sessão de catálagos de produtos */
+    object-fit: contain;
+}
+
+.xiaomi-image-product { 
+    height:250px;
+    width:250px;  /*ao clicar na imagem, direcionar para a sessão de catálagos */
+    object-fit: contain;
+}
+
+.apple-image-product {
+    height: 250px;
+    width: 250px; /*ao clicar na imagem, direcionar para a sessão de catálagos */
+    object-fit: contain;
+}
+
+.product-name { 
+    color:rgb(30,144,255);
+    font-size: 1.2em;
+    text-align: center;
+}   
+
+.description-product {
+    font-weight: 400;
+    line-height: 1.25;
+    text-align: center;
+    color: rgba(0, 0, 0, .55);
+}
+
+.about-article {
+    width: 100vw;
+}
+
+.aboutTitle {
+    text-align: center;
+    font-size:45px;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    color: #02024b;
+    margin: 10px 0 0 0;
+    font-size:30px;
+}
+
+.about-section {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    background-color: #02024b;
+    border-radius: 5px;
+    margin:0 auto;
+    margin-top: 20px;
+    width: 90vw;
+    max-width: 1200px;
+}
+
+.dstore-history {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 100;
+    font-size: 1.8em;
+    word-spacing: 4px;
+    letter-spacing: 2px;
+    line-height:1.5em;
+    width: 100%;
+    text-align: center;
+    color: white;
+}
+
+.clique-aqui {
+    color:rgb(106, 98, 228);
+}
+
+.img-about {
+    display: block;
+    height: 500px;
+    width:100%;
+    object-fit:cover;
+    border-radius: 5px;
+}
+
+.footer {
+    margin-top:100px ;
+    max-height: 150px;
+    width: 100%;
+    max-width: 100%;
+    border:solid #1b2727 1px;
+    background-color: rgb(24, 24, 30);
+}
+
+.footer-contain {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+    background-color: #02024b;
+    gap: 100px;
+}
+
+.footerContact {
+    height: 90px;
+}
+
+.connect-text {
+    font-size:20px;
+    color:#fff;
+}
+
+.highlightSocial {
+    color: pink;
+}
+
+.socialList {
+    display: flex;
+    padding: 0;
+    list-style: none;
+}
+
+.social-link {
+    margin-right:20px;
+}
+
+.footer-svg {
+    height:20px;
+    width:20px;
+}
+
+.support-el-group {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+    padding: 10px;
+}
+
+.svgContact {
+    height: 10px;
+    width: 12px;
+}
+
+.sedeAdress {
+    color:white;
+    font-size: 12px;
+}
+
+.tel-address{
+    color:white;
+    font-size: 12px;
+    white-space:nowrap;
+}
+
+.email-support{
+     color:white;
+    font-size: 12px;
+}
+@media screen  and (max-width: 838px) {
+
+    header {
+        width: 100vw;
+    }
+    
+    .elementsGroup {
+        display: none;
+    }
+
+    .navBox {
+       gap: 0px;
+       margin: 0;
+       padding: 0;
+    }
+
+    .inputBox {
+        width:340px;
+        padding: 5px;
+    }
+
+    .loginContainer {
+        display: none;
+    }
+
+    .btn-menu {
+        display: block;
+        
+    }
+
+    .firstBox {
+        width: 100%;
+  }
+
+    .iphone15-title {
+        font-size: 12vw;
+        letter-spacing: 2px;
+    }
+
+    .button-confira {
+        width: 30vw;
+        margin: 0 0 3em 32vw;
+    }
+
+    .my-products {
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        width: 100%;
+    }
+
+    .div-section-group {
+        width: 100vw;
+        padding: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 1.5em;
+        justify-content: space-between;
+        gap: 4em;
+    }
+
+    .product {
+       width: 250px;
+       height: 250px;
+       flex: 1;
+       justify-content: center;
+       align-items: center;
+       padding: 10px;
+    }
+
+    .product:nth-child(3) {
+        flex: 1 1 100%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .about-article {
+        margin-top:14em;
+    }
+
+    footer {
+        height: 210px;
+    }
+
+    .connect-text {
+        font-size: 16px;
+    }
+
+    .support-el-group {
+        display: flex;
+        flex-wrap: wrap;
+        height: 100%;
+        justify-content: space-between;
+        gap: 10px;
+    }
+
+    .supportBox {
+        flex: 2 1;
+        margin-left: 50px;
+        height: 20px;
+        text-align: center;
+    }
+
+    .supportBox:nth-child(3) {
+        flex: 1 100%;
+        margin-left: 50px;
+    }
+}
+@media screen and (min-width: 320px) and (max-width: 442px) {
+    .logoDS {
+            height: 30px;
+            width: 30px;
+      }
+    .navBox {
+        justify-content: center;
+        align-items: center;
+    }
+    .inputBox {
+        width: 300px;
+    }
+
+    .loupeBox {
+        margin-left: 3px;
+    }
+
+    .headerGroup {
+        justify-content: space-between;
+    }
+
+    .elementsGroup {
+        display: none;
+    }
+
+    .loginContainer {
+      display: none;
+    }
+
+    .inputBox {
+        position:relative;
+        left: 10px;
+    }
+
+    .iphone-box {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100vw;
+    }
+
+    .iphone-title-section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 300px;
+        width: 100%;
+    }
+
+    .iphone15-title {
+       /* font-size: 3.2em; */
+       font-size: 12vw;
+       letter-spacing: 2px;
+       word-spacing: 0;
+       margin-left:0px;   
+    }
+
+    .button-confira {
+        border:solid white 2px;
+        color:black;
+        background-color: white;
+        font-size:28px;
+        margin: 0 auto;
+        width: 30vw;
+    }
+
+    .button-confira:hover {
+        color:blue;
+    }
+    
+    .confiraHidden {
+        display: none;
+    }
+
+    .div-section-group {
+        padding: 10px;
+    }
+
+    .about-article {
+        width: 70vw;
+        margin-left: 20px;
+    }
+
+    .aboutTitle {
+        margin-left: 25vw;
+    }
+
+    .about-section {
+        height: 74em;
+         
+    }
+
+    .img-about {
+        height: 300px;
+        width: 90vw;
+    }
+    .dstore-history {
+        font-weight: bold;
+    }
+
+   .footer {
+    margin-top:100px;
+    height:120px;
+    
+   }
+   .connect-text {
+    display: none;
+   }
+   .support-el-group {
+    gap: 10px;
+    padding: 10px;
+    height: 120px;
+    background-color: rgb(7, 6, 6);
+   }
+
+}
