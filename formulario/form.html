@@ -8,14 +8,14 @@
     <title>Formulário</title>
 </head>
 <body>
-<main>
+<main id="form-container">
     <div class="formHeader">
-    <h2>Criar conta</h2>
-    <button class="default">
-            <i class="bi bi-box-arrow-in-right"></i>
-    </button>
+        <h2>Criar conta</h2>
+        <button class="default">
+                <i class="bi bi-box-arrow-in-right"></i>
+        </button>
 
-    <form action="" id="form">
+        <form action="" id="form">
         <div class="input-container">
 
             <div class="input-box">
@@ -56,6 +56,46 @@
                     <i class="bi bi-eye bi bi-eye-slash"></i>
                 </div>
             </div>
+
+            <div class="input-box">
+                <label for="confirm-password" class="form-label">Confirmar Senha:</label>
+                <div class="input-field">
+                    <input type="confirm-password" name="confirm-password" id="confirm-password" class="form-control" placeholder="*******">
+                    <i class="bi bi-eye bi bi-eye-slash"></i>
+                </div>
+            </div>
+
+            <div class="input-box">
+                <label for="telephone" class="form-label">Celular:</label>
+                <div class="input-field">
+                    <input type="tel" name="telephone" id="telephone" class="form-control" placeholder="Número">
+                </div>
+            </div>
+
+            <div class="radio-container">
+                <label class="form-label">Gênero</label>
+                <div id="gender-inputs">
+                    <div class="radio-box">
+                        <input type="radio" name="gender" id="female" class="form-control" value="female">
+                        <label for="female" class="form-label">Bebéla</label>
+                    </div>
+
+                    <div class="radio-box">
+                        <input type="radio" name="gender" id="male" class="form-control" value="male">
+                        <label for="male" class="form-label">Macho</label>
+                    </div>
+
+                     <div class="radio-box">
+                        <input type="radio" name="gender" id="other" class="form-control" value="other">
+                        <label for="other" class="form-label">Tchola</label>
+                    </div>
+                </div>
+            </div>
+
+            <button type="submit" class="btn-default">
+                <i class="bi bi-check-lg"></i>
+                Criar conta
+            </button>
 
         </div>
 
