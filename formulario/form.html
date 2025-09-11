@@ -10,14 +10,13 @@
 <body>
 <main id="form-container">
     <div class="formHeader">
-        <h2>Criar conta</h2>
-        <button class="default">
-                <i class="bi bi-box-arrow-in-right"></i>
+        <h2 id="form-title">Criar conta</h2>
+        <button class="btn-default">
+            <i class="bi bi-box-arrow-in-right"></i>
         </button>
-
-        <form action="" id="form">
+    </div>
+    <form action="" id="form">
         <div class="input-container">
-
             <div class="input-box">
                 <label for="name" class="form-label">Nome:</label>
                 <div class="input-field">
@@ -53,7 +52,7 @@
                 <label for="password" class="form-label">Senha:</label>
                 <div class="input-field">
                     <input type="password" name="password" id="password" class="form-control" placeholder="*******">
-                    <i class="bi bi-eye bi bi-eye-slash"></i>
+                    <i class=" bi bi-eye bi bi-eye-slash password-icon"></i>
                 </div>
             </div>
 
@@ -61,11 +60,11 @@
                 <label for="confirm-password" class="form-label">Confirmar Senha:</label>
                 <div class="input-field">
                     <input type="confirm-password" name="confirm-password" id="confirm-password" class="form-control" placeholder="*******">
-                    <i class="bi bi-eye bi bi-eye-slash"></i>
+                    <i class="bi bi-eye bi bi-eye-slash password-icon"></i>
                 </div>
             </div>
 
-            <div class="input-box">
+            <div class="input-box telephoneBox">
                 <label for="telephone" class="form-label">Celular:</label>
                 <div class="input-field">
                     <input type="tel" name="telephone" id="telephone" class="form-control" placeholder="Número">
@@ -77,17 +76,17 @@
                 <div id="gender-inputs">
                     <div class="radio-box">
                         <input type="radio" name="gender" id="female" class="form-control" value="female">
-                        <label for="female" class="form-label">Bebéla</label>
+                        <label for="female" class="form-label">Mulher</label>
                     </div>
 
                     <div class="radio-box">
                         <input type="radio" name="gender" id="male" class="form-control" value="male">
-                        <label for="male" class="form-label">Macho</label>
+                        <label for="male" class="form-label">Homem</label>
                     </div>
 
                      <div class="radio-box">
                         <input type="radio" name="gender" id="other" class="form-control" value="other">
-                        <label for="other" class="form-label">Tchola</label>
+                        <label for="other" class="form-label">Outro</label>
                     </div>
                 </div>
             </div>
@@ -99,8 +98,8 @@
 
         </div>
 
-        </form>
-    </div>
+    </form>
+   
 </main>
 </body>
 </html>

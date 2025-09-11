@@ -11,7 +11,29 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    
+}
+
+.btn-default {
+    background-color: blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 500;
+    color: #fff;
+    cursor: pointer;
+    gap: 8px;
+    height: fit-content;
+    box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s ease;
+}
+
+.btn-default:hover {
+    background-color: #6366f1;
+
 }
 
 #form-container {
@@ -21,7 +43,8 @@ body {
     gap: 32px;
     padding: 20px;
     border-radius: 8px;
-    background-color: #fbb;
+    background-color: #fff;
+    /* achar uma cor provisória para ver melhor os elementos */
     box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.3);
 }
 
@@ -29,4 +52,109 @@ body {
    display: flex;
    align-items: center;
    justify-content: space-between;
+}
+
+#form-title {
+    font-weight: 700;
+    color: #02024b;
+    position: relative;
+}
+
+#form-title::after {
+    content: '';
+    position: absolute;
+    width:100px;
+    height: 2px;
+    border-radius: 30px;
+    background-color:  #6366f1;
+    left:0;
+    bottom: 0;
+}
+
+#form {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 32px;
+    height: 100%;
+}
+
+.input-container {
+    display: grid;
+    gap: 24px;
+}
+
+.form-label {
+    font-size: 14px;
+    color: #404044;
+    font-weight: 500;
+}
+
+.input-field {
+    display: flex;
+    align-items: center;
+    background-color: #ffff;
+    border-radius: 8px;
+    box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.3);
+}
+
+.input-field i {
+    display: flex;
+    align-items: center;
+    width: 30px;
+    height: 20px;
+    color:#404044;
+}
+
+.input-field .password-icon:hover {
+    cursor: pointer;
+    color: blue;
+}
+
+.form-control {
+    padding: 10px;
+    width: 100%;
+    border: none;
+    border-radius: 8px;
+}
+
+.form-control:focus {
+    outline: none;
+}
+
+.input-box .input-field:focus-within {
+    outline: 2px solid #6366f1;
+}
+
+.radio-container {
+    grid-column: span 2;
+}
+
+#gender-inputs {
+    display: flex;
+    gap: 20px;
+}
+
+.radio-box {
+    display: flex;
+    gap: 4px;
+    align-items: center;
+}
+
+.form-control[type="radio"] {
+    accent-color:#6366f1 ;
+}
+
+@media screen and (max-width:500px){
+    #form-container {
+        width: 100%;
+        min-height: 100vh;
+        padding: 32px;
+    }
+
+    .input-container {
+        display: flex;
+        flex-direction: column;
+        gap: 38px;
+    }
 }
