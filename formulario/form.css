@@ -6,7 +6,7 @@
 }
 
 body {
-    /* background: url("./imagesForm/imgFormLogin.jpeg"); */
+    background: url("./imagesForm/imgFormLogin.jpeg");
     min-height: 100vh;
     display: flex;
     justify-content: center;
@@ -53,6 +53,7 @@ body {
    align-items: center;
    justify-content: space-between;
 }
+
 
 #form-title {
     font-weight: 700;
@@ -143,6 +144,14 @@ body {
 
 .form-control[type="radio"] {
     accent-color:#6366f1 ;
+}
+
+.type-here {
+    color: #dc3636;
+    font-size: 12px;
+    margin: 4px 0 0 4px;
+    max-width: 200px;
+    /* continuar daqui */
 }
 
 @media screen and (max-width:500px){
