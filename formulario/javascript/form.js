@@ -3,11 +3,32 @@ const form = document.querySelector('#form')
 form.addEventListener('submit',(e)=>{
     e.preventDefault();
 
-    const name = document.querySelector('#name').value
-    console.log(name)
+    const errorIcon = '<i class="bi bi-exclamation-circle-fill"></i>'
+
+    const name = document.querySelector('#name')
+    const inputBox = name.closest('.input-box')
+
+    const nameValue = name.value
+    const errorSpan = inputBox.querySelector('.type-here')
+    errorSpan.innerHTML = ''
+
+    inputBox.classList.remove('invalid')
+    inputBox.classList.add('valid')
+
+
+    if(isEmpty(nameValue)){
+        errorSpan.innerHTML= `${errorIcon} Campo Obrigatório!`
+        inputBox.classList.add('invalid')
+        inputBox.classList.remove('valid')
+        return
+    }
 })
 
-const passwordIcons = document.querySelectorAll(".password-icon")
+function isEmpty(value){
+    return value === '';
+}
+
+const passwordIcons = document.querySelectorAll('.password-icon') //mudei aqui
 passwordIcons.forEach(icon =>{
     icon.addEventListener('click',function(){
         const input = this.parentElement.querySelector('.form-control')

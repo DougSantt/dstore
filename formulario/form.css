@@ -149,9 +149,24 @@ body {
 .type-here {
     color: #dc3636;
     font-size: 12px;
-    margin: 4px 0 0 4px;
+    margin-top: 4px;
     max-width: 200px;
-    /* continuar daqui */
+}
+
+.input-box.invalid .form-label {
+    color: #dc2626;
+}
+
+.input-box.invalid .input-field {
+   border: 1px solid #dc2626;
+}
+
+.input-box.valid .form-label {
+   color: 1px solid #22c55e;
+}
+
+.input-box.valid .input-field {
+   border: 1px solid #22c55e;
 }
 
 @media screen and (max-width:500px){
