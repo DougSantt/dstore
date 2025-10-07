@@ -16,8 +16,8 @@ form.addEventListener('submit',(e)=>{
     inputBox.classList.add('valid')
 
 
-    if(isEmpty(nameValue)){
-        errorSpan.innerHTML= `${errorIcon} Campo Obrigatório!`
+    if(!nameIsValid(nameValue).isValid){
+        errorSpan.innerHTML= `${errorIcon} ${nameIsValid(nameValue).errorMessage}`
         inputBox.classList.add('invalid')
         inputBox.classList.remove('valid')
         return
@@ -26,6 +26,35 @@ form.addEventListener('submit',(e)=>{
 
 function isEmpty(value){
     return value === '';
+}
+
+function nameIsValid(value){
+    const validator = {
+        isValid: true,
+        errorMessage: null
+    };
+
+    if (isEmpty(value)) {
+    validator.isValid = false;
+    validator.errorMessage = 'Campo Obrigatório!';
+        return validator;
+    }
+    
+    const min = 3;
+
+    if(value.length < 3){
+    validator.isValid = false; 
+     validator.errorMessage = `Mínimo ${min} caracteres!`
+        return validator;
+    }
+
+    const regex = /^[a-zA-Z]^/;
+    if(!regex.test(value)) {
+        validator.isValid = false
+        validator.errorMessage = `Apenas letras!`
+    }
+
+    return validator;
 }
 
 const passwordIcons = document.querySelectorAll('.password-icon') //mudei aqui
