@@ -3,25 +3,43 @@ const form = document.querySelector('#form')
 form.addEventListener('submit',(e)=>{
     e.preventDefault();
 
+    const fields = [
+        {
+            id: 'name',
+            label: 'name',
+            validator: nameIsValid
+        },
+        {
+            id: 'last-name',
+            label: 'last-name',
+            validator: nameIsValid
+        }
+    ]
+
     const errorIcon = '<i class="bi bi-exclamation-circle-fill"></i>'
 
-    const name = document.querySelector('#name')
-    const inputBox = name.closest('.input-box')
+    fields.forEach(function (field) {
+        const input = document.getElementById(field.id)
+        const inputBox = input.closest('.input-box')
+        const inputValue = input.value
+      
+        const errorSpan = inputBox.querySelector('.type-here')
+        errorSpan.innerHTML = ''
 
-    const nameValue = name.value
-    const errorSpan = inputBox.querySelector('.type-here')
-    errorSpan.innerHTML = ''
+        inputBox.classList.remove('invalid')
+        inputBox.classList.add('valid')
 
-    inputBox.classList.remove('invalid')
-    inputBox.classList.add('valid')
+        const fieldValidator = field.validator(inputValue)
 
+        if(!fieldValidator.isValid){
+            errorSpan.innerHTML= `${errorIcon} ${fieldValidator.errorMessage}`
+            inputBox.classList.add('invalid')
+            inputBox.classList.remove('valid')
+            return
+        }
 
-    if(!nameIsValid(nameValue).isValid){
-        errorSpan.innerHTML= `${errorIcon} ${nameIsValid(nameValue).errorMessage}`
-        inputBox.classList.add('invalid')
-        inputBox.classList.remove('valid')
-        return
-    }
+    })
+
 })
 
 function isEmpty(value){
@@ -49,9 +67,11 @@ function nameIsValid(value){
     }
 
     const regex = /^[a-zA-Z]^/;
+    //verificar a existência da funçao validator
     if(!regex.test(value)) {
         validator.isValid = false
         validator.errorMessage = `Apenas letras!`
+       
     }
 
     return validator;
