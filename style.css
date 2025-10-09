@@ -201,7 +201,7 @@ h1 {
    background-color: black;
    border-radius: 10px;
    gap: 50px;
-   background-image:url('/images/iphone15-principal.jpg');
+   background-image:url('images/iphone15-principal.jpg');
    background-origin: border-box ;
    background-repeat: no-repeat;
    background-position: center;
