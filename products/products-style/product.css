@@ -11,6 +11,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: black;
     
 }
 
@@ -20,6 +21,17 @@
     background-color: black;
     border-radius: 5px;
 
+}
+
+.elements-header {
+    display: flex;
+    gap: 20px;
+}
+
+.loupe-header {
+    height: 10px;
+    width: 5px;
+    
 }
 
 .logoSvg {
@@ -93,12 +105,13 @@
 
 .cart-box :hover {
     background-color: rgb(167, 93, 235);
-    border-radius: 1px;
+    border: 1px solid rgb(167, 93, 235);
+    border-radius: 3px;
 }
 
 .svg-product {
-    height: 40px;
-    width: 40px;
+    height: 35px;
+    width: 35px;
     border:none;
 }
 
@@ -113,4 +126,5 @@
 .description-product {
     color: rgba(0, 0, 0, .55);
     font-size: 16px;
+   
 }
