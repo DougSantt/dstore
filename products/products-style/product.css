@@ -7,7 +7,7 @@
 .header-container {
     width: 100vw;
     height: 80px;
-    border: solid 1px red;
+    /* border: solid 1px red; */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -16,11 +16,60 @@
 }
 
 .logo-container {
-    height: 50px;
-    width: 42px;
+    width: 30px;
     background-color: black;
     border-radius: 5px;
+    padding: 5px;
+}
 
+.logoSvg {
+    height: 40px;
+    width: 40px;
+}
+
+.searchBox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    
+}
+
+.search-input {
+    width: 280px;
+    height: 30px;
+    border-radius: 15px;
+    
+}
+
+.button-loupe {
+    background-color: black;
+    border: none;
+   cursor: pointer;
+    
+}
+
+.loupe {
+    font-size: 25px;
+    color: rgb(217, 215, 215);
+}
+.loupe:hover {
+    color: white;
+}
+
+.cartBox {
+   padding: 5px;
+   margin-right: 10px;
+   cursor: pointer;
+
+}
+
+.cartIcon {
+    font-size: 30px;
+    color: rgb(217, 215, 215);
+}
+.cartIcon:hover {
+    color: white;
 }
 
 .elements-header {
@@ -34,15 +83,9 @@
     
 }
 
-.logoSvg {
-    height: 50px;
-    width: 46px;
-}
-
 .title-container {
     width: 100vw;
-    height: 80px;
-    border: solid 1px green;
+    height: 150px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -50,9 +93,43 @@
     gap: 20px;
 }
 
+.title-container {
+  background-color: black;
+}
+
+.tag-home {
+    font-size: 20px;
+    font-family: "Bebas Neue", sans-serif;
+    color: rgb(217, 215, 215);
+    text-decoration: none;
+    
+}
+.tag-home:hover {
+    color: white;
+}
+
+.tag-products {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+}
+
+h1 {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 4em;
+    color: rgb(217, 215, 215);
+}
+
 .container {
     display: flex;
     justify-content: center;
+    align-items: center;
+    margin-top:3em;
+    flex-direction: column;
+    gap: 80px;
 }
 
 .products-container {
@@ -60,7 +137,6 @@
   flex-direction: row;
   align-items: center;
   gap: 60px;
-
 }
 
 .product-box {
@@ -114,7 +190,6 @@
     width: 35px;
     border:none;
 }
-
 
 .price {
     display: inline-block;
