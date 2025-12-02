@@ -142,8 +142,8 @@ h1 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 450px;
-    width: 400px;
+    height: 400px;
+    width: 350px;
     border-radius: 5px;
     box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.3);
     padding: 10px 0px;
@@ -151,8 +151,8 @@ h1 {
 }
 
 .box-img-product {
-     height: 310px;
-     width: 310px;
+     height: 250px;
+     width: 250px;
 }
 
 .img-product {
@@ -164,26 +164,26 @@ h1 {
 }
 
 .img-product:hover {
-     height: 310px;
-     width: 310px;
+     height: 260px;
+     width: 260px;
      transform: scale(1.05); 
     
 }
 
 #xboxSeriesImg {
-    height: 290px;
+    height: 250px;
 }
 
 #ps5ProImg {
-    height: 290px;
+    height: 250px;
 }
 
 
 .details-products {
    position: relative;
    width: 100%;
-   height: 130px;
-   padding: 0px 5px;
+   height: 100%;
+   padding: 5px 5px;
    margin-top: 10px;
    background-color: rgba(217, 215, 215, 0.274);
 }
@@ -192,11 +192,15 @@ h1 {
     margin-top: 5px;
     display: flex;
     justify-content: space-between;
-    height: 40px;
+    height: 35px;
 }
 
 .product-title {
-    font-size: 28px;
+    font-size: 26px;
+     font-family: "Bebas Neue", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    color: rgb(88, 86, 86);
 }
 
 .cart-box {
@@ -208,8 +212,8 @@ h1 {
 }
 
 .cart-box :hover {
-    background-color: rgb(167, 93, 235);
-    border: 1px solid rgb(167, 93, 235);
+    background-color: #5b38ed;
+    border: 1px solid  #5b38ed;
     border-radius: 3px;
 }
 
@@ -221,7 +225,7 @@ h1 {
 
 .price {
     display: inline-block;
-    font-weight:600;
+    font-weight:400;
     font-size: 18px;
     margin-top:3px;
 }
@@ -229,7 +233,11 @@ h1 {
 .description-product {
     color: rgba(0, 0, 0, .55);
     font-size: 16px;
-   
 }
 
-/* Continuar alterando os nomes e descrições dos produtos, mudar o violeta do carrinho etc. */
+footer {
+    height: 100px;
+    width: 100%;
+    background-color: gray;
+    margin-top: 50px;
+}
