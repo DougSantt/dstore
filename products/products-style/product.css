@@ -236,8 +236,31 @@ h1 {
 }
 
 footer {
+    color: white;
     height: 100px;
     width: 100%;
-    background-color: gray;
+    background-color: black;
     margin-top: 50px;
+}
+
+/* .suport-and-pag {
+
+} */
+
+#registered-svg {
+    height: 20px;
+    width: 20px;
+}
+
+.suport-box {
+    color: white;
+}
+
+.box-card {
+    color: white;
+}
+
+.svg-card {
+    height: 30px;
+    width: 30px;
 }
