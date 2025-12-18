@@ -1,3 +1,10 @@
+body {
+    max-height: 1280px;
+    max-width: 1280px;
+    width: 100%;
+    height: 100%;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -56,11 +63,10 @@
     color: white;
 }
 
-.cartBox {
+.cartBoxIcon {
    padding: 5px;
    margin-right: 10px;
    cursor: pointer;
-
 }
 
 .cartIcon {
@@ -69,6 +75,19 @@
 }
 .cartIcon:hover {
     color: white;
+}
+
+.cart {
+    width: 400px;
+    height: 40em;
+    background-color: yellow;
+    padding: 10px;
+    margin-top: 560px;
+    display: none;
+}
+
+.cartBoxIcon.cart {
+    display: block;
 }
 
 .elements-header {
@@ -129,6 +148,7 @@ h1 {
     margin-top:3em;
     flex-direction: column;
     gap: 80px;
+    width: 100vw;
 }
 
 .products-container {
@@ -238,29 +258,78 @@ h1 {
 footer {
     color: white;
     height: 100px;
-    width: 100%;
+    width: 100vw;
     background-color: black;
     margin-top: 50px;
 }
 
-/* .suport-and-pag {
-
-} */
-
-#registered-svg {
-    height: 20px;
-    width: 20px;
+.support-and-pag {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
-.suport-box {
+
+
+.support-box {
     color: white;
+}
+
+.support-box b {
+    font-size: 14px;
+    font-weight: 200;
+}
+
+.support-box b a {
+    color: white;
+    text-decoration: none;
+}
+
+#support-svg {
+    height: 18px;
+    width: 18px;
 }
 
 .box-card {
-    color: white;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 5px;
+    height: 40px;
+}
+
+.pag-text {
+    font-size: 16px;
+    
 }
 
 .svg-card {
     height: 30px;
     width: 30px;
+}
+
+#pix-svg {
+    height: 25px;
+    width: 25px;
+}
+
+.address-container {
+    margin-left: 25em;
+}
+
+.address-text {
+    font-size: 12px;
+    font-weight: 100;
+}
+
+.box-registered {
+    display: inline-block;
+    margin: 10px 0 0 38em;
+    padding: 5px;
+}
+
+#registered-svg {
+    height: 12px;
+    width: 12px;
+    margin-top:5px;
 }
