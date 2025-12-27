@@ -37,8 +37,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 5px;
-    
+    padding: 5px;   
 }
 
 .search-input {
@@ -76,20 +75,6 @@ body {
 .cartIcon:hover {
     color: white;
 }
-
-/* Carrinho lateral
-.cart {
-    width: 400px;
-    height: 40em;
-    background-color: yellow;
-    padding: 10px;
-    margin-top: 560px;
-    display: none;
-}
-
-.cartBoxIcon.cart {
-    display: block;
-} */
 
 .elements-header {
     display: flex;
