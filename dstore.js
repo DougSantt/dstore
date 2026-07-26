@@ -69,3 +69,48 @@ function runResizeCallBacks(){
 
 window.addEventListener('resize', runResizeCallBacks)
 window.addEventListener('load', runResizeCallBacks)
+
+// interações slider
+let img_slider = document.querySelectorAll('.slider-container .slider-box')
+let btn_prox =document.querySelector('#proxima')
+let btn_anter =document.querySelector('#anterior')
+let btn_nav = document.querySelectorAll('.btn-nav-box .btn-nav')
+
+let contadorImg = img_slider.length
+let imgAtiva = 0
+
+btn_prox.addEventListener('click',()=>{
+    imgAtiva++;
+    if(imgAtiva >= contadorImg){
+      imgAtiva = 0;
+    }
+    mostrarSlider()
+})
+
+btn_anter.addEventListener('click',()=>{
+    imgAtiva--;
+    if(imgAtiva < 0){
+      imgAtiva = contadorImg -1
+    }
+    mostrarSlider()
+})
+
+function mostrarSlider(){
+    let antigaImg = document.querySelector('.slider-container .slider-box.ativo')
+    let antigoBtnNav = document.querySelector('.btn-nav-box .btn-nav.ativo')
+
+    antigaImg.classList.remove('ativo')
+    antigoBtnNav.classList.remove('ativo')
+
+    img_slider[imgAtiva].classList.add('ativo')
+
+    btn_nav[imgAtiva].classList.add('ativo')
+
+}
+
+btn_nav.forEach((btn,indice)=>{
+    btn.addEventListener('click',()=>{
+      imgAtiva = indice
+      mostrarSlider()
+    })
+})
