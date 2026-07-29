@@ -79,12 +79,33 @@ let btn_nav = document.querySelectorAll('.btn-nav-box .btn-nav')
 let contadorImg = img_slider.length
 let imgAtiva = 0
 
+let slide_interval;
+
+function iniciarIntervalo() {
+    slide_interval = setInterval(() => {
+        imgAtiva++;
+
+        if (imgAtiva >= contadorImg) {
+            imgAtiva = 0;
+        }
+
+        mostrarSlider();
+
+    }, 5000);
+}
+
+function reiniciarIntervalo() {
+    clearInterval(slide_interval);
+    iniciarIntervalo();
+}
+
 btn_prox.addEventListener('click',()=>{
     imgAtiva++;
     if(imgAtiva >= contadorImg){
       imgAtiva = 0;
     }
     mostrarSlider()
+    reiniciarIntervalo()
 })
 
 btn_anter.addEventListener('click',()=>{
@@ -93,6 +114,7 @@ btn_anter.addEventListener('click',()=>{
       imgAtiva = contadorImg -1
     }
     mostrarSlider()
+    reiniciarIntervalo()
 })
 
 function mostrarSlider(){
@@ -112,5 +134,8 @@ btn_nav.forEach((btn,indice)=>{
     btn.addEventListener('click',()=>{
       imgAtiva = indice
       mostrarSlider()
+      reiniciarIntervalo()
     })
 })
+
+iniciarIntervalo()
