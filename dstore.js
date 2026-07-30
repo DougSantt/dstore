@@ -24,7 +24,7 @@ menuMobile.addEventListener("click",(evt)=>{
 })
 
 document.addEventListener("click",(e)=>{
-    const clickFora = !menuMobile.contains(e.target) && !btnMenu.contains(e.target);
+    const clickFora = !menuMobile.contains(e.target) && !btnMenu.contains(e.target)
     if(clickFora) {
       menuMobile.classList.remove("clickClose")
     }
@@ -67,8 +67,7 @@ function runResizeCallBacks(){
   resizeCallBacks.forEach(it => it());
 }
 
-window.addEventListener('resize', runResizeCallBacks)
-window.addEventListener('load', runResizeCallBacks)
+
 
 // interações slider
 let img_slider = document.querySelectorAll('.slider-container .slider-box')
@@ -139,3 +138,5 @@ btn_nav.forEach((btn,indice)=>{
 })
 
 iniciarIntervalo()
+window.addEventListener('resize', runResizeCallBacks)
+window.addEventListener('load', runResizeCallBacks)

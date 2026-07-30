@@ -141,13 +141,13 @@ header {
 }
 
 .menu-mobile {
-    height: 50vh;
-    width: 12em;
+    height: 40vh;
+    width: 9em;
     border-radius: 8px;
     background-color: rgb(7, 6, 6);
     position: fixed;
     top: 0px;
-    right: 0;
+    right: 0px;
     display: flex;
     justify-content: center;
     transition: 0.5s;
@@ -155,7 +155,8 @@ header {
 }
 
 .menu-mobile.clickClose {
-    display:flex; 
+    display:flex;
+    z-index: 99999;
 }
 
 .btn-fechar .iconFechar {
@@ -209,13 +210,10 @@ header {
 
 .interface {
     max-width: 1280px;
-    /* margin: 0 auto; */
     padding:0px;
 }
 
-/* Estilo do slider */
 .slider {
-    /* no codigo da aula, esta classe esta tbm no header */
     height: 70vh;
     position: relative;
 
@@ -259,6 +257,17 @@ header {
 
 .slider .slider-box .texto-slider h2 {
     font-size: 5rem;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 4px;
+    word-spacing: 3px;
+}
+
+.slider .slider-box.ativo p {
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   font-size: 22px;
+   font-weight: 300;
 }
 
 @keyframes animaTexto{
@@ -283,7 +292,6 @@ header {
     z-index: 11111;
 }
 
-/* Setas */
 .setas {
     width: 100%;
     height: 100%;
@@ -301,21 +309,22 @@ header {
 }
 
 .setas button {
-    width: 40px;
+    width: 25px;
     height: 40px;
     background-color: #747474;
     border: 0;
     border-radius: 8px;
     cursor: pointer;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     transition: .2s;
+    color: #fff;
 }
 
 .setas button:hover {
     background-color: #fff;
+    color: #c85716;
 }
 
-/* Botões de navegação */
 .btn-nav-box {
     width: 100%;
     position: absolute;
@@ -346,85 +355,11 @@ header {
     background-color: #fff;
 }
 
-
-/* h1 {
-    margin: 0 auto;
-    width:200px;
-    color:black;
-    font-size:4em;
-    letter-spacing: 3px;
-   
-}
-.firstBox { 
-  width: 100%;
-  padding: 5px;
-}
-
-.iphone-box {
-   margin: 0 auto;
-   width: 100%;
-   height:600px;
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   background-color: black;
-   border-radius: 10px;
-   gap: 50px;
-   background-image:url('images/iphone15-principal.jpg');
-   background-origin: border-box ;
-   background-repeat: no-repeat;
-   background-position: center;
-   background-size: cover;
-   object-fit: cover;
-}
-
-.iphone-title-section {
-    margin: 0 auto;
-    height: 300px;
-    width: 780px;
-}
-
-.iphone15-title {
-    font-family: "Bebas Neue", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 6em;
-    color:white;
-    letter-spacing: 4px;
-    word-spacing: 3px;
-    margin-left:80px;
-  }
-  
-
-.button-confira {
-    width: 250px;
-    height: 70px;
-    font-size: 26px;
-    font-family: "Bebas Neue", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    letter-spacing: 3px;
-    word-spacing: 3px;
-    border-radius:15px;
-    margin: 0 0 3em 230px;
-    border:solid white 2px;
-    color:black;
-    background-color: white;
-    cursor: pointer;
-}
-
-.button-confira:hover {
-    border:solid white 2px;
-    color:blue;
-    font-size:28px;
-    height: 75px;
-}
- */
-
- .my-products {
+.my-products {
     height: 65vh;
     width: 100vw;
     padding: 10px;
+    background-color: #1b2727;
 }
 
 .h3Products {
@@ -432,13 +367,16 @@ header {
     font-size:45px;
     font-family: "Bebas Neue", sans-serif;
     font-weight: 400;
-    color: rgb(30,144,255);
+    color: #e1e4ea;
     font-style: normal;
-    border-bottom: solid rgb(30,144,255) 2px;
+    border-bottom: solid #c85716 2px;
     margin-top:20px;
     padding: 10px;
 }
 
+.h3Products strong {
+   color: #c85716;
+}
 .div-section-group {
     display: flex;
     align-items: center;
@@ -475,7 +413,7 @@ header {
 }
 
 .product-name { 
-    color:rgb(30,144,255);
+    color:#e1e4ea;
     font-size: 1.2em;
     text-align: center;
 }   
@@ -489,6 +427,8 @@ header {
 
 .about-article {
     width: 100vw;
+    height: 50em;
+    /* background-color: red; */
 }
 
 .aboutTitle {
@@ -504,13 +444,14 @@ header {
 .about-section {
     display: flex;
     flex-direction: column;
-    color: white;
+    color: #02024b;
     background-color: #02024b;
     border-radius: 5px;
     margin:0 auto;
-    margin-top: 20px;
+    height: 42rem;
+    /* margin-top: 20px; */
     width: 90vw;
-    max-width: 1200px;
+    /* max-width: 1280px; */
 }
 
 .dstore-history {
@@ -522,7 +463,7 @@ header {
     line-height:1.5em;
     width: 100%;
     text-align: center;
-    color: white;
+    color: #fff;
 }
 
 .clique-aqui {
@@ -538,8 +479,7 @@ header {
 }
 
 .footer {
-    margin-top:100px ;
-    max-height: 150px;
+    height: 20vh;
     width: 100%;
     max-width: 100%;
     border:solid #1b2727 1px;
@@ -721,8 +661,8 @@ header {
 }
 @media screen and (min-width: 320px) and (max-width: 442px) {
     .logoDS {
-            height: 30px;
-            width: 30px;
+        height: 30px;
+        width: 30px;
       }
     .navBox {
         justify-content: center;
@@ -753,67 +693,35 @@ header {
         left: 10px;
     }
 
-    .iphone-box {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        width: 100vw;
-    }
-
-    .iphone-title-section {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        height: 300px;
-        width: 100%;
-    }
-
-    .iphone15-title {
-       font-size: 12vw;
-       letter-spacing: 2px;
-       word-spacing: 0;
-       margin-left:0px;   
-    }
-
-    .button-confira {
-        border:solid white 2px;
-        color:black;
-        background-color: white;
-        font-size:28px;
-        margin: 0 auto;
-        width: 30vw;
-    }
-
-    .button-confira:hover {
-        color:blue;
-    }
-    
-    .confiraHidden {
-        display: none;
+    .my-products {
     }
 
     .div-section-group {
         padding: 10px;
+        /* margin-bottom:50vh; */
     }
 
     .about-article {
-        width: 70vw;
-        margin-left: 20px;
+        margin-top: 0vh;
+        /* height: 10vh; nn mexer por enquanto */
+        /* width: 70vw; */
+        /* margin-left: 20px; */
+        background-color: #747474;
+    }
+
+    .about-section {
+        /* height: 50vh;
+        margin-top: 40vh; */
     }
 
     .aboutTitle {
         margin-left: 25vw;
     }
 
-    .about-section {
-        height: 74em;
-         
-    }
-
     .img-about {
-        height: 300px;
+        height: 30vh;
         width: 90vw;
+        /* margin-top: 70vh; */
     }
     .dstore-history {
         font-weight: bold;
