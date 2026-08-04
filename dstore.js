@@ -67,9 +67,6 @@ function runResizeCallBacks(){
   resizeCallBacks.forEach(it => it());
 }
 
-
-
-// interações slider
 let img_slider = document.querySelectorAll('.slider-container .slider-box')
 let btn_prox =document.querySelector('#proxima')
 let btn_anter =document.querySelector('#anterior')
@@ -136,6 +133,24 @@ btn_nav.forEach((btn,indice)=>{
       reiniciarIntervalo()
     })
 })
+
+const elementos_revelar = document.querySelectorAll(".reveal");
+
+const observador = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add("active");
+        } else {
+            entry.target.classList.remove("active");
+        }
+    });
+}, {
+    threshold: 0.3
+});
+
+elementos_revelar.forEach(elemento => {
+    observador.observe(elemento);
+});
 
 iniciarIntervalo()
 window.addEventListener('resize', runResizeCallBacks)
