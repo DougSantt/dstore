@@ -9,24 +9,31 @@ const headerInput = document.querySelector('.headerInput')
 const inputBox = document.querySelector(".inputBox")
 const aboutSection = document.querySelector('.about-section')
 
+const menu_on = ()=>{
+    return menuMobile.classList.toggle("clickClose")
+}
+
 btnMenu.addEventListener("click",()=>{
-    menuMobile.classList.toggle("clickClose")
+    menu_on()
 })
 
-btnFechar.addEventListener("click",()=>{
-     menuMobile.style.display="none"
+btnFechar.addEventListener("click",(ev)=>{
+    menu_on()
 })
 
 menuMobile.addEventListener("click",(evt)=>{
     if(evt.target.tagName === "A" || evt.target.tagName=== "LI") {
-      menuMobile.classList.remove("clickClose")
+        menuMobile.style.display=""
+        menu_on()
     }
 })
 
 document.addEventListener("click",(e)=>{
     const clickFora = !menuMobile.contains(e.target) && !btnMenu.contains(e.target)
+    
     if(clickFora) {
       menuMobile.classList.remove("clickClose")
+    
     }
 })
 
@@ -38,8 +45,8 @@ function adjustSearchInput() {
        headerInput.style.width= ''
        inputBox.style.width= ''
       break
-    case (windowSize <= 583):
-        aboutArticle.style.marginTop='32em'
+/*     case (windowSize <= 583):
+        aboutArticle.style.marginTop='32em' */
       
     case (windowSize <= 397):
       headerInput.style.width= "68vw"
@@ -52,16 +59,18 @@ function adjustSearchInput() {
   }
 }
 
-const adjustSection = ()=>{
+/* const adjustSection = ()=>{
    let windowSize = window.innerWidth
   if(windowSize <= 442) {
     aboutSection.style.height= "64em"
   } else {
     aboutSection.style.height= ''
   }
-}
+} */
 
-const resizeCallBacks = [adjustSection,adjustSearchInput];
+// const resizeCallBacks = [adjustSection,adjustSearchInput];
+const resizeCallBacks = [adjustSearchInput];
+
 
 function runResizeCallBacks(){
   resizeCallBacks.forEach(it => it());
