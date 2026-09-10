@@ -59,16 +59,6 @@ function adjustSearchInput() {
   }
 }
 
-/* const adjustSection = ()=>{
-   let windowSize = window.innerWidth
-  if(windowSize <= 442) {
-    aboutSection.style.height= "64em"
-  } else {
-    aboutSection.style.height= ''
-  }
-} */
-
-// const resizeCallBacks = [adjustSection,adjustSearchInput];
 const resizeCallBacks = [adjustSearchInput];
 
 
