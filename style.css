@@ -438,7 +438,6 @@ header {
     color:#fff;
     font-size: 1.6em;
     text-align: center;
-    /* background-color: #40647c; */
     width: 100%;
     border-radius: 2px;
     margin-top: 5px;
@@ -502,6 +501,54 @@ header {
 
 .clique-aqui {
     color:rgb(106, 98, 228);
+
+}
+
+.sessao-desconto {
+    height: 50vh;
+    min-height: 50vh;
+    width: 100vw;
+    max-width: 100vw;
+    margin: 0 auto;
+    border-radius: 5px;
+    margin-top: 15vh;
+}
+
+.title-desconto {
+    color: #fff;
+    text-align: center;
+    font-size: 3em;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.txt-site-dest {
+    color:#90b1db;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.txt-desc-destaque {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #5ce65c;
+    
+}
+
+.box-desconto {
+    height: 100%;
+    width: 100%;
+}
+
+.sessao-desconto .box-desconto .img-desconto {
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+    object-position: center;
+
 }
 
 .footer {
@@ -646,9 +693,41 @@ header {
         margin-top:5vh;
     }
 
+    .dstore-history {
+        font-size: 3.5vh;
+    }
+
+    .title-desconto {
+        color: #fff;
+        text-align: center;
+        font-size: 5vh;
+        font-family: "Bebas Neue", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+
+    .sessao-desconto {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        width: 100%;
+        height: 50vh;
+        margin-top: 35vh;
+
+    }
+
+    .sessao-desconto .box-desconto .img-desconto {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
     .footer {
         height: 210px;
         margin-top: 42vh;
+        margin-top: 12vh;
     }
 
     .connect-text {
@@ -675,6 +754,7 @@ header {
         margin-left: 50px;
     }
 }
+
 @media screen and (min-width: 320px) and (max-width: 442px) {
 .headerGroup {
     width: 100%;
@@ -778,8 +858,39 @@ header {
     font-weight: bold;
 }
 
+.dstore-history {
+    font-size: 3.5vh;
+}
+
+.title-desconto {
+    color: #fff;
+    text-align: center;
+    font-size: 5vh;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.sessao-desconto {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    width: 100%;
+    height: 50vh;
+    margin-top: 5vh;
+
+}
+
+.sessao-desconto .box-desconto .img-desconto {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
 .footer {
-    margin-top:10px;
+    margin-top:10vh;
     height:120px;
     
 }
