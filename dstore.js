@@ -45,8 +45,6 @@ function adjustSearchInput() {
        headerInput.style.width= ''
        inputBox.style.width= ''
       break
-/*     case (windowSize <= 583):
-        aboutArticle.style.marginTop='32em' */
       
     case (windowSize <= 397):
       headerInput.style.width= "68vw"
