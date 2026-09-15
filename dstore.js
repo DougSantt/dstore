@@ -149,6 +149,36 @@ elementos_revelar.forEach(elemento => {
     observador.observe(elemento);
 });
 
+// logica para calcular dias até uma data
+/* const dataEvento = new Date("2026-10-15T00:00:00");
+
+function contador() {
+    const agora = new Date();
+
+    const diferenca = dataEvento - agora;
+
+    const dias = Math.floor(diferenca / (1000 * 60 * 60 * 24));
+
+    const horas = Math.floor(
+        (diferenca % (1000 * 60 * 60 * 24)) /
+        (1000 * 60 * 60)
+    );
+
+    const minutos = Math.floor(
+        (diferenca % (1000 * 60 * 60)) /
+        (1000 * 60)
+    );
+
+    console.log(`${dias} dias, ${horas} horas e ${minutos} minutos`)
+    imprimir_dias.innerHTML=dias
+    imprimir_horas.innerHTML=horas
+    imprimir_minutos.innerHTML=minutos
+
+}
+ 
+setInterval(contador, 1000);
+*/
+
 iniciarIntervalo()
 window.addEventListener('resize', runResizeCallBacks)
 window.addEventListener('load', runResizeCallBacks)

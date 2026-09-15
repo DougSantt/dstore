@@ -613,6 +613,28 @@ header {
 
 }
 
+/*
+.mes_ofertas {
+
+}
+
+ .container_ofertas {
+
+} */
+
+.mes_ofertas_title{
+    color: #fff;
+}
+
+/* .box_ofertas_img {
+
+} */
+
+.img-mes-promo {
+    height: 600px;
+    width: 700px;
+}
+
 .footer {
     height: 20vh;
     width: 100%;
