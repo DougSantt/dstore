@@ -646,6 +646,75 @@ header {
     border-radius: 5px;
 }
 
+.depoimentos {
+    width: 100%;
+    padding: 50px 20px;
+    border-radius: 5px;
+    max-width: 900px;
+
+    background-color: #fff;
+    position: relative;
+
+    overflow: hidden;
+    margin: 0 auto;
+    margin-top: 20vh;
+
+}
+
+.depoimentos .depoimento-txt {
+    font-family: "Bebas Neue", sans-serif;
+    letter-spacing: 2px;
+    font-size: 4vh;
+    font-weight: 400;
+    color: rgb(235, 201, 10);
+
+    text-align: center;
+}
+
+.depoimentos .slide-depoimentos {
+    padding: 40px 60px;
+    cursor: grab;
+}
+
+.depoimentos .slide-depoimentos:active {
+    cursor: grabbing;
+}
+
+.depoimentos i {
+    font-size: 90px;
+    color: #a3a2a2;
+}
+
+.depoimentos p.depoi-txt {
+    font-weight: 3000;
+    margin-bottom: 40px;
+    color: #000;
+}
+
+.slide-depoimentos .pessoa {
+    color: #000;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.img-perfil {
+    height: 80px;
+    width: 80px;
+}
+
+.pessoa p.nome-pessoa {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.pessoa p.prof-pessoa {
+    color: #dfdfdf;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+
 .footer {
     height: 20vh;
     width: 100%;
