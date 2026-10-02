@@ -1,3 +1,162 @@
+body {
+    width: 100%;
+    height: 100%;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+header {
+    width: 100%;
+    height: 60px;
+    border: red 1px solid;
+}
+
+.box-carrinho {
+    height: 50px;
+    width: 50px;
+}
+
+.carrinho {
+    height: 100%;
+    width: 100%;
+}
+
+.icone-carrinho {
+    font-size: 25px;
+    
+}
+
+main {
+    width: 100%;
+    height: 80vh;
+    border: solid 1px black;
+}
+
 h1 {
-    color:blue;
+    text-align: center;
+}
+
+.produtos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 20vw));
+
+    grid-template-rows: repeat(auto-fit, minmax(200px, 320px));
+    justify-content: center;
+    gap: 40px;
+
+}
+
+.produto {
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    border: solid black 1px;
+    padding: 10px;
+    border-radius: 5px;
+
+    display: flex;
+    flex-direction: column;
+    background-color: #f7f7f7;
+
+}
+
+.box-img-produto {
+    width: 100%;
+}
+
+.box-img-produto img {
+    width: 100%;
+    height: 190px;
+    object-fit: fill;
+    
+}
+
+.detalhes-produtos {
+    background-color: #d3d3d3;
+    height: 110px;
+    width: 100%;
+    margin-top: 5px;
+}
+
+.box-nome-preco {
+    
+    display: flex;
+    justify-content: space-between;
+}
+
+.nome-produto {
+    font-family: "Bebas Neue", sans-serif;
+    letter-spacing: 1px;
+}
+
+.preco-produto {
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.box-descricao {
+
+}
+
+.descricao {
+    font-family: "Bebas Neue", sans-serif;
+    letter-spacing: 1px;
+}
+
+.container-btns {
+    display: flex;
+    justify-content: space-between;
+}
+
+.box-quantidade {
+    margin-top: 5px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.btn-quantidade {
+    width: 25px;
+    border: none;
+    cursor: pointer;
+}
+
+#i-dash {
+    color: red;
+}
+
+#i-plus {
+    color: green;
+}
+
+.i-btn-qtd {
+    font-size: 15px;
+}
+
+.box-btn-carrinho {
+    
+}
+
+.btn-carrinho {
+    height: 35px;
+    width: 40px;
+    border: solid 1px #000;
+    border-radius: 2px;
+    padding: 2px;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.btn-carrinho:hover {
+    border: solid 1px green;
+}
+
+.i-carrinho {
+    font-size: 25px;
+    color: #000;
+}
+
+.i-carrinho:hover {
+    color: green;
 }
