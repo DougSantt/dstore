@@ -1,6 +1,7 @@
 body {
     width: 100%;
     height: 100%;
+    background-color: #e8e8e8;
 }
 
 * {
@@ -8,10 +9,27 @@ body {
     margin: 0;
 }
 
+
 header {
     width: 100%;
     height: 60px;
-    border: red 1px solid;
+    background-color: #000;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    border-radius: 2px;
+
+
+}
+
+header h3 {
+    color: #fff;
+    font-size: 25px;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    letter-spacing: 2px;
 }
 
 .box-carrinho {
@@ -25,13 +43,19 @@ header {
 }
 
 .icone-carrinho {
-    font-size: 25px;
+    font-size: 30px;
+    color: #fff;
+    cursor: pointer;
     
+}
+
+.quantidadeCarrinho {
+    color: #fff;
 }
 
 main {
     width: 100%;
-    height: 80vh;
+    max-height: 100%;
     border: solid 1px black;
 }
 
@@ -41,12 +65,18 @@ h1 {
 
 .produtos {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 20vw));
+    grid-template-columns: repeat(auto-fit, minmax(220px, 16vw));
 
     grid-template-rows: repeat(auto-fit, minmax(200px, 320px));
     justify-content: center;
-    gap: 40px;
+    
+    width: 100%;
+    max-width: 1280px;
+    gap: 60px;
+    height: 100%;
 
+    /* margin-top: 20px; */
+    margin: 20px auto;
 }
 
 .produto {
@@ -57,7 +87,11 @@ h1 {
 
     display: flex;
     flex-direction: column;
-    background-color: #f7f7f7;
+    background-color: #f8f8f8;
+    min-height: 200px;
+    height: 320px;
+
+    min-width: 0;
 
 }
 
@@ -69,14 +103,20 @@ h1 {
     width: 100%;
     height: 190px;
     object-fit: fill;
+    transition: transform 0.3s ease;
+    cursor: pointer;
     
 }
 
+.box-img-produto img:hover {
+    transform: scale(1.1);
+}
+
 .detalhes-produtos {
-    background-color: #d3d3d3;
-    height: 110px;
+    background-color: #e8e8e8;
+    height: 100px;
     width: 100%;
-    margin-top: 5px;
+    margin-top: 15px;
 }
 
 .box-nome-preco {
@@ -87,21 +127,25 @@ h1 {
 
 .nome-produto {
     font-family: "Bebas Neue", sans-serif;
-    letter-spacing: 1px;
+    font-weight: 400;
+    color: #525252;
 }
 
 .preco-produto {
     font-size: 25px;
-    font-weight: 700;
+    font-weight: 400;
+    color: green;
 }
 
-.box-descricao {
-
-}
+/* .box-descricao {
+} */
 
 .descricao {
     font-family: "Bebas Neue", sans-serif;
     letter-spacing: 1px;
+    font-weight: 200;
+    color: #525252;
+
 }
 
 .container-btns {
@@ -141,15 +185,11 @@ h1 {
 .btn-carrinho {
     height: 35px;
     width: 40px;
-    border: solid 1px #000;
+    border: none;
     border-radius: 2px;
     padding: 2px;
     background-color: transparent;
     cursor: pointer;
-}
-
-.btn-carrinho:hover {
-    border: solid 1px green;
 }
 
 .i-carrinho {
