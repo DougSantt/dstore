@@ -784,19 +784,9 @@ header {
     white-space:nowrap;
 }
 
-.email-support{
+.email-support {
      color:white;
     font-size: 12px;
-}
-
-.swiper-button-next,
-.swiper-button-prev {
-    color: red !important;
-    display: block !important;
-}
-
-.swiper-pagination {
-    display: block !important;
 }
 
 @media screen  and (max-width: 838px) {

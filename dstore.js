@@ -150,49 +150,49 @@ elementos_revelar.forEach(elemento => {
 });
 
 // contagem regressiva de uma data
-let imprimir_dias = document.querySelector('#dias_txt')
-let imprimir_horas = document.querySelector('#horas_txt')
-let imprimir_min = document.querySelector('#min_txt')
-let imprimir_sec = document.querySelector('#sec_txt')
+// let imprimir_dias = document.querySelector('#dias_txt')
+// let imprimir_horas = document.querySelector('#horas_txt')
+// let imprimir_min = document.querySelector('#min_txt')
+// let imprimir_sec = document.querySelector('#sec_txt')
 
-const dataEvento = new Date("2026-10-15T00:00:00");
+// const dataEvento = new Date("2026-10-15T00:00:00");
 
-function contador() {
-    const agora = new Date();
+// function contador() {
+//     const agora = new Date();
 
-    const diferenca = dataEvento - agora;
+//     const diferenca = dataEvento - agora;
 
-    let dias = Math.floor(diferenca / (1000 * 60 * 60 * 24));
-    dias=dias<10?"0"+dias:dias;
+//     let dias = Math.floor(diferenca / (1000 * 60 * 60 * 24));
+//     dias=dias<10?"0"+dias:dias;
 
 
-    let horas = Math.floor(
-        (diferenca % (1000 * 60 * 60 * 24)) /
-        (1000 * 60 * 60)
-    );
-    horas=horas<10?"0"+horas:horas;
+//     let horas = Math.floor(
+//         (diferenca % (1000 * 60 * 60 * 24)) /
+//         (1000 * 60 * 60)
+//     );
+//     horas=horas<10?"0"+horas:horas;
 
-    let minutos = Math.floor(
-        (diferenca % (1000 * 60 * 60)) /
-        (1000 * 60)
-    );
-    minutos=minutos<10?"0"+minutos:minutos;
+//     let minutos = Math.floor(
+//         (diferenca % (1000 * 60 * 60)) /
+//         (1000 * 60)
+//     );
+//     minutos=minutos<10?"0"+minutos:minutos;
 
-     let segundos = Math.floor(
-        (diferenca % (1000 * 60)) /
-        1000
-    );
-    segundos=segundos<10?"0"+segundos:segundos;
+//      let segundos = Math.floor(
+//         (diferenca % (1000 * 60)) /
+//         1000
+//     );
+//     segundos=segundos<10?"0"+segundos:segundos;
 
-    // console.log(`${dias} dias, ${horas} horas e ${minutos} minutos ${segundos}`) test
-    imprimir_dias.innerHTML=dias+":"
-    imprimir_horas.innerHTML=horas+":"
-    imprimir_min.innerHTML=minutos+":"
-    imprimir_sec.innerHTML=segundos
+//     // console.log(`${dias} dias, ${horas} horas e ${minutos} minutos ${segundos}`) test
+//     imprimir_dias.innerHTML=dias+":"
+//     imprimir_horas.innerHTML=horas+":"
+//     imprimir_min.innerHTML=minutos+":"
+//     imprimir_sec.innerHTML=segundos
 
-}
+// }
  
-setInterval(contador, 1000);
+// setInterval(contador, 1000);
 
 
 iniciarIntervalo()
